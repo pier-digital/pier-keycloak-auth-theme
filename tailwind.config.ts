@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
-import colors from 'tailwindcss/colors';
+import tailwindColors from 'tailwindcss/colors';
+import { colors } from '@pierdigital/shared-tokens';
 
 export default {
   content: ['./theme/**/*.ftl'],
@@ -10,9 +11,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: colors.blue,
-        secondary: colors.gray,
-
+        primary: tailwindColors.blue,
+        secondary: tailwindColors.gray,
+        'bg-secondary-100': colors.blue,
         provider: {
           apple: '#000000',
           bitbucket: '#0052CC',
