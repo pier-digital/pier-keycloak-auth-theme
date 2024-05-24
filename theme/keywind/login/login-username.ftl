@@ -27,6 +27,7 @@
       >
         <#if !usernameHidden??>
           <@input.kw
+            placeholder=msg("usernamePlaceholder")
             autocomplete=realm.loginWithEmailAllowed?string("email", "username")
             autofocus=true
             disabled=usernameEditDisabled??

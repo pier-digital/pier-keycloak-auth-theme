@@ -1,7 +1,7 @@
 <#macro kw content="" footer="" header="">
   <div class="bg-white p-8 rounded-lg space-y-6">
     <#if header?has_content>
-      <div class="space-y-4">
+      <div class="space-y-2 mb-10">
         ${header}
       </div>
     </#if>
@@ -11,7 +11,7 @@
       </div>
     </#if>
     <#if footer?has_content>
-      <div class="space-y-4">
+      <div class="space-y-4 text-sm">
         ${footer}
       </div>
     </#if>

@@ -33,6 +33,7 @@
         <@input.kw
           autocomplete=realm.loginWithEmailAllowed?string("email", "username")
           autofocus=true
+          placeholder=msg("usernamePlaceholder")
           disabled=usernameEditDisabled??
           invalid=messagesPerField.existsError("username", "password")
           label=usernameLabel
@@ -44,6 +45,7 @@
         <@input.kw
           invalid=messagesPerField.existsError("username", "password")
           label=msg("password")
+          placeholder=msg("passwordPlaceholder")
           name="password"
           type="password"
         />

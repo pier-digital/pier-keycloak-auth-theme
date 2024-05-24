@@ -19,6 +19,7 @@
           autofocus=true
           invalid=messagesPerField.existsError("username")
           label=msg("username")
+          placeholder=msg("usernamePlaceholder")
           message=kcSanitize(messagesPerField.get("username"))
           name="username"
           type="text"
@@ -29,6 +30,7 @@
         autocomplete="email"
         invalid=messagesPerField.existsError("email")
         label=msg("email")
+        placeholder=msg("emailPlaceholder")
         message=kcSanitize(messagesPerField.get("email"))
         name="email"
         type="email"
@@ -38,6 +40,7 @@
         autocomplete="given-name"
         invalid=messagesPerField.existsError("firstName")
         label=msg("firstName")
+        placeholder=msg("firstNamePlaceholder")
         message=kcSanitize(messagesPerField.get("firstName"))
         name="firstName"
         type="text"
@@ -47,6 +50,7 @@
         autocomplete="family-name"
         invalid=messagesPerField.existsError("lastName")
         label=msg("lastName")
+        placeholder=msg("lastNamePlaceholder")
         message=kcSanitize(messagesPerField.get("lastName"))
         name="lastName"
         type="text"

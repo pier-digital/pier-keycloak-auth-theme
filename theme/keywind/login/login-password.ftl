@@ -18,6 +18,7 @@
         autofocus=true
         invalid=messagesPerField.existsError("password")
         label=msg("password")
+        placeholder=msg("passwordPlaceholder")
         message=kcSanitize(messagesPerField.get("password"))?no_esc
         name="password"
         type="password"

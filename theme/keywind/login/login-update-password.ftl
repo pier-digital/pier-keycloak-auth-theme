@@ -26,6 +26,7 @@
         autofocus=true
         invalid=messagesPerField.existsError("password", "password-confirm")
         label=msg("passwordNew")
+        placeholder=msg("passwordNewPlaceholder")
         name="password-new"
         type="password"
       />
@@ -33,6 +34,7 @@
         autocomplete="new-password"
         invalid=messagesPerField.existsError("password-confirm")
         label=msg("passwordConfirm")
+        placeholder=msg("passwordConfirmPlaceholder")
         message=kcSanitize(messagesPerField.get("password-confirm"))
         name="password-confirm"
         type="password"

@@ -3,7 +3,7 @@
   "name": "keywind",
   "scripts": {
     "build": "tsc && vite build",
-    "build:jar": "vite-node scripts/build",
+    "build:jar": "tsc && vite build && vite-node scripts/build",
     "dev": "vite dev",
     "test": "mvn test"
   },

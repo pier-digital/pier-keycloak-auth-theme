@@ -16,6 +16,8 @@
 >
   <#if section="header">
     ${msg("emailForgotTitle")}
+  <#elseif section="info">
+    ${msg("emailInstruction")}
   <#elseif section="form">
     <@form.kw action=url.loginAction method="post">
       <@input.kw
@@ -23,6 +25,7 @@
         autofocus=true
         invalid=messagesPerField.existsError("username")
         label=usernameLabel
+        placeholder=msg("usernamePlaceholder")
         message=kcSanitize(messagesPerField.get("username"))
         name="username"
         type="text"
@@ -34,8 +37,7 @@
         </@button.kw>
       </@buttonGroup.kw>
     </@form.kw>
-  <#elseif section="info">
-    ${msg("emailInstruction")}
+
   <#elseif section="nav">
     <@link.kw color="secondary" href=url.loginUrl size="small">
       ${kcSanitize(msg("backToLogin"))?no_esc}

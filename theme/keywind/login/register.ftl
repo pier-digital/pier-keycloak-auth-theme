@@ -19,6 +19,7 @@
         autofocus=true
         invalid=messagesPerField.existsError("firstName")
         label=msg("firstName")
+        placeholder=msg("firstNamePlaceholder")
         message=kcSanitize(messagesPerField.get("firstName"))
         name="firstName"
         type="text"
@@ -28,6 +29,7 @@
         autocomplete="family-name"
         invalid=messagesPerField.existsError("lastName")
         label=msg("lastName")
+        placeholder=msg("lastNamePlaceholder")
         message=kcSanitize(messagesPerField.get("lastName"))
         name="lastName"
         type="text"
@@ -37,6 +39,7 @@
         autocomplete="email"
         invalid=messagesPerField.existsError("email")
         label=msg("email")
+        placeholder=msg("emailPlaceholder")
         message=kcSanitize(messagesPerField.get("email"))
         name="email"
         type="email"
@@ -47,6 +50,7 @@
           autocomplete="username"
           invalid=messagesPerField.existsError("username")
           label=msg("username")
+          placeholder=msg("usernamePlaceholder")
           message=kcSanitize(messagesPerField.get("username"))
           name="username"
           type="text"
@@ -58,6 +62,7 @@
           autocomplete="new-password"
           invalid=messagesPerField.existsError("password", "password-confirm")
           label=msg("password")
+          label=msg("passwordPlaceholder")
           message=kcSanitize(messagesPerField.getFirstError("password", "password-confirm"))
           name="password"
           type="password"
@@ -66,6 +71,7 @@
           autocomplete="new-password"
           invalid=messagesPerField.existsError("password-confirm")
           label=msg("passwordConfirm")
+          placeholder=msg("passwordConfirmPlaceholder")
           message=kcSanitize(messagesPerField.get("password-confirm"))
           name="password-confirm"
           type="password"

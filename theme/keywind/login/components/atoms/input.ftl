@@ -12,10 +12,11 @@
   name=""
   required=true
   type="text"
+  placeholder=""
   rest...
 >
   <div>
-    <label class="sr-only" for="${name}">
+    <label for="${name}" class="text-xs text-pier-body">
       ${label}
     </label>
     <#if type == "password">
@@ -29,7 +30,7 @@
           class="${class}"
           id="${name}"
           name="${name}"
-          placeholder="${label}"
+          placeholder="${placeholder}"
           :type="show ? 'text' : 'password'"
 
           <#list rest as attrName, attrValue>
@@ -61,7 +62,7 @@
         class="${class}"
         id="${name}"
         name="${name}"
-        placeholder="${label}"
+        placeholder="${placeholder}"
         type="${type}"
 
         <#list rest as attrName, attrValue>
