@@ -18,8 +18,6 @@ archive.on('error', (error) => {
 });
 
 archive.pipe(output);
-
 archive.directory('META-INF', 'META-INF');
 archive.directory('theme', 'theme');
-
 archive.finalize();

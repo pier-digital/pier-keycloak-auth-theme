@@ -2,14 +2,20 @@
   "$schema": "https://json.schemastore.org/package",
   "name": "keywind",
   "scripts": {
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && pnpm build:email",
     "build:jar": "tsc && vite build && vite-node scripts/build",
     "dev": "vite dev",
-    "test": "mvn test"
+    "test": "mvn test",
+    "dev:email": "email dev",
+    "build:email": "email build"
   },
   "dependencies": {
     "@pierdigital/shared-tokens": "^1.2.2",
+    "@react-email/components": "0.0.19",
+    "@react-email/render": "0.0.15",
     "alpinejs": "^3.13.0",
+    "react": "^18.3.1",
+    "react-email": "2.1.4",
     "rfc4648": "^1.5.2"
   },
   "devDependencies": {
